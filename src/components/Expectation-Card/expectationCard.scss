@@ -1,0 +1,38 @@
+@import "../var";
+
+.card-container {
+  //   width: 19rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18.165rem;
+}
+
+.card-logo {
+  width: 5.625rem;
+  height: 5.625rem;
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: fill;
+  }
+}
+
+.card-text {
+  font-family: $f-poppins;
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1e2a39;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5c6272;
+    margin-bottom: 0;
+  }
+}

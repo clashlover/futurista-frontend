@@ -1,0 +1,30 @@
+@import "../var";
+@import "../mixin";
+
+.discussion-text-container {
+  width: 45%;
+  font-family: $f-poppins;
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #292929;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5c6272;
+    margin-top: 1rem;
+  }
+}
+
+.discussion-cards-container {
+  @include display-grid(2rem);
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 64.063em) {
+  .discussion-text-container {
+    width: 100%;
+    text-align: center;
+  }
+}

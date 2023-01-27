@@ -1,0 +1,49 @@
+@import "../mixin";
+
+.btn-header-blue {
+  @include btn-blue;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem 0.5rem;
+}
+
+.btn-light {
+  color: #23a6dd;
+  margin: 1rem 0.5rem;
+}
+
+.header {
+  width: 45rem;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 6rem auto;
+  h1 {
+    font-weight: 700;
+    font-size: 3.375rem;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .header {
+    width: 100%;
+    padding: 0 1rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .home-button-container {
+    margin-top: 1rem;
+  }
+
+  .btn-header-blue,
+  .btn-light {
+    margin: 0.5rem;
+  }
+}

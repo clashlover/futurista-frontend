@@ -1,0 +1,24 @@
+@import "../mixin";
+
+.navbar-container {
+  justify-content: space-between;
+  padding: 0.5rem 5rem;
+  background: transparent;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.btn-contact {
+  @include btn-blue;
+  padding: 0.5rem 1.5rem;
+}
+
+@media only screen and (max-width: 64.063em) {
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../mixin";
+
+.questions-container {
+  background-color: #ffffff;
+  margin: 3.5rem 5.5rem 1.5rem;
+  text-align: left;
+  border-radius: 15px;
+  padding: 3.5rem 6.5rem;
+}
+
+.questions-main {
+  text-align: center;
+  padding: 5rem 0 2rem;
+  h1 {
+    @include big-heading-poppins(2.6rem);
+  }
+}
+
+@media only screen and (max-width: 36.25em) {
+  .questions-container {
+    margin: 3rem 0 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .questions-container {
+    margin: 3rem 0 1.5rem;
+  }
+}

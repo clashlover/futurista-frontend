@@ -1,0 +1,70 @@
+@import "../var";
+@import "../mixin";
+
+.footer-para {
+  color: #e7e7e7;
+  font-family: $f-inter;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.form-input {
+  //   border: 1px solid rgba(255, 255, 255, 0.85);
+  //   border-radius: 12px;
+  //   display: inline-block;
+  //   border-right: none;
+  display: flex;
+  align-items: center;
+  input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    border-right: none;
+    padding: 0.9rem;
+    font-family: $f-inter;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.9rem 2rem;
+    margin-left: -1rem;
+    font-family: $f-inter;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+.footer-header {
+  font-family: $f-poppins;
+  font-weight: 700;
+  font-size: 2.1rem;
+  color: #ffffff;
+}
+
+.footer {
+  @include display-grid(3rem);
+}
+
+.container-two {
+  padding: 0 2rem;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.container-three {
+  img {
+    margin: 0.3rem;
+  }
+}
+.footer-card-container {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 64.063em) {
+  .container-two {
+    padding: 0;
+  }
+}

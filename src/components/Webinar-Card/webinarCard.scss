@@ -1,0 +1,29 @@
+@import "../var";
+
+.webinar-card-container {
+  width: 13.5rem;
+  display: inline-block;
+  margin: 2rem;
+  text-align: left;
+  h1 {
+    color: #34a5e4;
+    font-family: $f-poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    color: #ffffff;
+    font-family: $f-inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .webinar-card-container {
+    text-align: center;
+  }
+}

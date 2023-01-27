@@ -1,0 +1,57 @@
+@import "../var";
+
+.attendance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 2rem;
+}
+
+.att-text-container {
+  text-align: center;
+  font-family: $f-inter;
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0a093d;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: $f-poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5c6272;
+  }
+}
+
+#att-blue-text {
+  color: #217bf4;
+  font-family: $f-inter;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.att-card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.att-card {
+  color: #5c6272;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-family: $f-poppins;
+  font-weight: 400;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 64.063em) {
+  .att-card {
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
+}

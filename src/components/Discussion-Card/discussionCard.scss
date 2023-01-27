@@ -1,0 +1,42 @@
+@import "../var";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1.3rem;
+  height: 30rem;
+  border-radius: 15px;
+  background-size: cover;
+  border: none;
+  overflow: hidden;
+}
+
+.card-header {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: $f-poppins;
+  padding: 0;
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.area-name {
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: $f-poppins;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  padding: 0.5rem 1.3rem;
+}

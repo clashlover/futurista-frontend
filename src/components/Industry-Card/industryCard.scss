@@ -1,0 +1,29 @@
+@import "../var";
+
+.ind-card-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.4rem;
+  box-shadow: 0px 60px 100px -10px rgba(35, 47, 70, 0.06);
+}
+
+.ind-card-text {
+  font-family: $f-inter;
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #373737;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../var";
+
+.copy-right-container {
+  background-color: #161c2d;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  border-top: 0.2px solid #ffffff;
+  p {
+    font-family: $f-inter;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+.social {
+  width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+  img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  .copy-right-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .social {
+    margin-right: 0;
+    margin-top: 0.5rem;
+  }
+}

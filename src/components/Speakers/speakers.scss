@@ -1,0 +1,53 @@
+@import "../var";
+@import "../mixin";
+
+.speakers-container {
+  @include flex-column;
+  padding: 3rem 0 2rem;
+}
+
+.speakers-text {
+  text-align: center;
+  width: 40%;
+  font-family: $f-poppins;
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #1e2a39;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5c6272;
+  }
+}
+
+.speakers-image-container {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.sp-img {
+  width: 10rem;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  .speakers-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speakers-text {
+    width: 100%;
+  }
+}

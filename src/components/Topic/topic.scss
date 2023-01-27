@@ -1,0 +1,52 @@
+@import "../var";
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 2rem 2rem;
+}
+
+.topic-text-container {
+  text-align: center;
+  width: 55%;
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: $f-inter;
+    margin-bottom: 1rem;
+    color: #0a093d;
+  }
+
+  p {
+    font-family: $f-poppins;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5c6272;
+  }
+}
+
+.topic-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 50.063em) {
+  .topic-container {
+    padding: 8rem 0 2rem;
+  }
+  .topic-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .topic-text-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 70.188rem) {
+  .topic-container {
+    padding: 8rem 0 2rem;
+  }
+}

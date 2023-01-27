@@ -1,0 +1,43 @@
+@import "../var";
+
+.expectation-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  margin: 8.75rem 0 0 0;
+}
+
+.expectation-text-container {
+  color: #1e2a39;
+  font-family: $f-poppins;
+  text-align: center;
+  h1 {
+    font-weight: 700;
+    font-size: 2.7rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5c6272;
+    margin: 1rem 19rem;
+  }
+}
+
+.expectation-card-container {
+  //   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  margin: 4rem 0;
+  //   display: flex;
+  //   justify-content: space-between;
+}
+
+@media only screen and (max-width: 64.063em) {
+  .expectation-text-container {
+    p {
+      margin: 1rem 2rem;
+    }
+  }
+}

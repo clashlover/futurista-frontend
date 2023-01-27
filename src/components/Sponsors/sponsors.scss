@@ -1,0 +1,36 @@
+@import "../mixin";
+
+.sponsors-container {
+  @include flex-column;
+  padding: 6rem 0 2rem;
+  img {
+    width: 23rem;
+    height: auto;
+  }
+}
+
+.sp-text-container {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 2rem;
+  h1 {
+    @include big-heading-poppins(2.6rem);
+  }
+  p {
+    @include paragraph-poppins(1rem);
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .sp-text-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 25.125em) {
+  .sponsors-container {
+    img {
+      width: 100%;
+    }
+  }
+}

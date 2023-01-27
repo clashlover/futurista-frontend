@@ -1,0 +1,35 @@
+@import "./var";
+
+@mixin btn-blue {
+  background-color: #23a6dd;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  font-weight: 400;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin display-grid($var1) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: $var1;
+}
+
+@mixin big-heading-poppins($var1) {
+  font-family: $f-poppins;
+  font-size: $var1;
+  font-weight: 700;
+  color: #1e2a39;
+  margin-bottom: 1rem;
+}
+
+@mixin paragraph-poppins($var1) {
+  font-size: $var1;
+  font-weight: 400;
+  color: #5c6272;
+}
