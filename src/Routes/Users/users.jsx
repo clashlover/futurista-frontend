@@ -16,6 +16,7 @@ const Users = () => {
   useEffect(() => {
     handleUsers();
     console.log(error);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return isPending ? (
     <div>Loading...</div>
