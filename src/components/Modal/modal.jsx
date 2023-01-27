@@ -10,7 +10,9 @@ const InputModal = () => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    handleShow();
+    setTimeout(() => {
+      handleShow();
+    }, 2000);
   }, []);
 
   return (
